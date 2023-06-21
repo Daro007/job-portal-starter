@@ -1,94 +1,56 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import Finanzas from '../../assets/images/finanzas.svg'
+import Ambiente from '../../assets/images/ambiente-relajado.svg'
+import Practico from '../../assets/images/Practico.svg'
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <h2 className={styles.mainTitle}> Why us ? </h2>
+      <div className={styles.reasons}>
+        <div className={styles.item}>
+          <div>
+            <Image src={Practico} alt="Practico" className={styles.svg}  />{" "}
+          </div>
+          <div>
+            <h3 className={styles.reasonsTitle}> Fast & easy </h3>
+            <p className={styles.reasonsDescription}>
+              {" "}
+              Lorem ipsum dolor sit amet consectetur adipiscing elit cubilia,
+              aliquet lacinia ligula ut vestibulum eros urna ullamcorper, cras
+              sodales eleifend massa ac magna dictum.
+            </p>
+          </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <div className={styles.item}>
+          <div>
+            <Image src={Ambiente} alt="Ambiente de Start-up" className={styles.svg} />{" "}
+          </div>
+          <div>
+            <h3 className={styles.reasonsTitle}> Professionals</h3>
+            <p className={styles.reasonsDescription}>
+              {" "}
+              Lorem ipsum dolor sit amet consectetur adipiscing elit cubilia,
+              aliquet lacinia ligula ut vestibulum eros urna ullamcorper, cras
+              sodales eleifend massa ac magna dictum.
+            </p>
+          </div>
+        </div>
+        <div className={styles.item}>
+          <div>
+            <Image src={Finanzas} alt="Grafico finanzas" className={styles.svg} />{" "}
+          </div>
+          <div>
+            <h3 className={styles.reasonsTitle}> Transparent</h3>
+            <p className={styles.reasonsDescription}>
+              {" "}
+              Lorem ipsum dolor sit amet consectetur adipiscing elit cubilia,
+              aliquet lacinia ligula ut vestibulum eros urna ullamcorper, cras
+              sodales eleifend massa ac magna dictum.
+            </p>
+          </div>
+        </div>
       </div>
     </main>
   )
