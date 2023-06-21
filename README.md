@@ -1,4 +1,4 @@
-# Job Portal Homepage
+# Job Portal 
 
 This is a simple homepage for a Job Portal built with [Next.js](https://nextjs.org/) and TypeScript. The project utilizes the core features and components of Next.js, such as Fonts, Images, and Links. It is also deployed on Vercel, ensuring excellent performance and reliability.
 
@@ -18,7 +18,7 @@ The Job Portal homepage includes the following features:
 
 The Job Portal homepage is deployed on [Vercel](https://vercel.com/), a cloud platform for static sites and serverless functions. Vercel offers seamless integration with Next.js, providing a scalable and performant hosting solution.
 
-You can visit the live deployment of the Job Portal homepage by following this link: [Job Portal Homepage](https://your-vercel-url)
+You can visit the live deployment of the Job Portal by following this link: [Job Portal](https://job-portal-git-main-daro007.vercel.app/)
 
 ## Getting Started
 
