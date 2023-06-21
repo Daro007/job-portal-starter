@@ -5,7 +5,7 @@
 export default function About() {
   return (
     <main >
-      I'm the about
+      About
     </main>
   )
 }
