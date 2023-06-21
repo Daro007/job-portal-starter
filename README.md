@@ -26,12 +26,12 @@ To run the project locally, follow these steps:
 
 1. Clone the repository:
 ```bash
-    git clone https://github.com/your/repository.git
+    git clone https://github.com/Daro007/job-portal.git
 ```
 
 2. Navigate to the project directory:
 ```bash
-   cd job-portal-homepage
+   cd job-portal
 ```
 
 3. Install the dependencies:
