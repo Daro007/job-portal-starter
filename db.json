@@ -1,0 +1,20 @@
+{
+    "footerData": [
+        {
+            "label": "About Us",
+            "href": "about"
+        },
+        {
+            "label": "Contact",
+            "href": "contact"
+        },
+        {
+            "label": "Cookie Policy",
+            "href": "cookie-policy"
+        },
+        {
+            "label": "Privacy Policy",
+            "href": "privacy-policy"
+        }
+    ]
+}
