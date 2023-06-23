@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
+import db from "../db.json"
 
 import { Pacifico } from 'next/font/google'
 
@@ -12,8 +13,27 @@ const pacifico = Pacifico({
     weight: "400"
 })
 
+type FooterData = {
+    href: string;
+    label: string;
+}[];
 
-function Footer() {
+
+async function Footer() {
+    let footerData: FooterData
+
+    // Mocked response with json-server for DEV enviroment
+    if (process.env.NODE_ENV === "development") {
+        // console.log("process.env.NODE_ENV", process.env.NODE_ENV)
+        const response = await fetch('http://localhost:4000/footerData');
+        footerData = await response.json();
+        // console.log("footerData", footerData)
+    } else {
+        footerData = db.footerData;
+        // console.log("footerData FROM DB directly", footerData)
+    }
+
+
     return (
         <div className="footer">
             <Link aria-label="Homepage" href="/">
@@ -21,22 +41,15 @@ function Footer() {
                 <p className="copyright">© Copyright 2023</p>
             </Link>
             <div className="links-footer">
-                <Link className="linkfooter" aria-label="About Us" href="/about">
-                    About Us
-                </Link>
-                <br />
-                <Link className="linkfooter" aria-label="Contact" href="/contact">
-                    Contact
-                </Link>
-                <br />
-                <Link className="linkfooter" aria-label="Cookie Policy" href="/cookie-policy">
-                    Cookie Policy
-                </Link>
-                <br />
-                <Link className="linkfooter" aria-label="Privacy Policy" href="/privacy-policy">
-                    Privacy Policy
-                </Link>
-                <br />
+                {footerData.map(footerLinks =>
+                    <>
+                        <Link className="linkfooter" aria-label={footerLinks.label} href={footerLinks.href}>
+                            {footerLinks.label}
+                        </Link>
+                        <br />
+                    </>
+                )
+                }
                 <a className="linkfooter" aria-label="Linkedin" href="https://www.google.com/" rel="noopener noreferrer">
                     <FaLinkedin className="footer-icon" />{" "}
                 </a>
