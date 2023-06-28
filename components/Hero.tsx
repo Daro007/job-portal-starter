@@ -7,7 +7,7 @@ const pacifico = Pacifico({
     weight: "400"
 })
  
-function Header() {
+function Hero() {
   return (
     <div className="header">
       <h1 className="title"><span className={pacifico.className}>Your job on IT </span></h1>
@@ -18,4 +18,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Hero;

@@ -3,10 +3,12 @@ import styles from './page.module.css'
 import Finanzas from '../../assets/images/finanzas.svg'
 import Ambiente from '../../assets/images/ambiente-relajado.svg'
 import Practico from '../../assets/images/Practico.svg'
+import Hero from '../../components/Hero'
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <Hero />
       <h2 className={styles.mainTitle}> Why us ? </h2>
       <div className={styles.reasons}>
         <div className={styles.item}>

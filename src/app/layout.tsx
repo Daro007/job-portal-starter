@@ -1,6 +1,5 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import Head from 'next/head'
 
@@ -24,7 +23,6 @@ export default function RootLayout({
         <meta property="og:description" content={metadata.description} key="description" />
       </Head>
       <body className={inter.className}>
-        <Header />
         {children}
         <Footer />
       </body>
