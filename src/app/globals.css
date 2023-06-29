@@ -120,6 +120,7 @@ a {
 .linkfooter {
   color: #ffffff;
   text-decoration: none;
+  margin: 0.5em;
 }
 .footerLogo {
   color: #ffffff;
@@ -159,7 +160,7 @@ a {
 
 .links-footer {
   padding-top: 2em;
-  line-height: 25px;
+  line-height: 35px;
 }
 
 
@@ -178,7 +179,7 @@ a {
   }
   .links-footer {
     padding-top: 2em;
-    line-height: 25px;
+    line-height: 35px;
   }
 }
 
