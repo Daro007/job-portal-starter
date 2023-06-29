@@ -127,6 +127,12 @@ a {
   font-size: 1.5rem;
   margin: 0;
 }
+.navbarLogo {
+  color: #ffffff;
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+  margin: 0;
+}
 .copyright {
   color: #ffffff;
 }
@@ -146,7 +152,7 @@ a {
   font-family: "Roboto", cursive;
 }
 .subtitle {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: #ffffff;
   text-align: center;
 }
