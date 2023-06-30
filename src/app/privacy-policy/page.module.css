@@ -1,0 +1,16 @@
+.main {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    line-height: 30px;
+}
+
+.privacyPolicy h1 {
+    margin-bottom: 0.5em;
+}
+.privacyPolicy h2 {
+    margin-bottom: 0.5em;
+}
+.privacyPolicy {
+    width: 70%;
+    margin: 3em auto;
+}
