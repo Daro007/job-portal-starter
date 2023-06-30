@@ -18,7 +18,7 @@ export default function CookiePolicy() {
 
         <ul>
           <li><strong>Essential Cookies:</strong> These cookies are necessary for the functioning of our website. They enable you to navigate the site and use its features, such as accessing secure areas and making transactions.</li>
-          <li><strong>Analytical Cookies:</strong> We use analytical cookies to collect information about how visitors use our website. This helps us understand and improve the website's performance and usability. The data collected is anonymized and does not personally identify you.</li>
+          <li><strong>Analytical Cookies:</strong> We use analytical cookies to collect information about how visitors use our website. This helps us understand and improve the website´s performance and usability. The data collected is anonymized and does not personally identify you.</li>
           <li><strong>Preference Cookies:</strong> Preference cookies allow our website to remember information that changes the way it behaves or looks, such as your preferred language or region. These cookies may also enable personalized features and content.</li>
           <li><strong>Advertising Cookies:</strong> Our website may use advertising cookies to deliver personalized advertisements that are relevant to your interests. These cookies track your browsing habits and enable us to show you targeted ads on our site or on third-party websites.</li>
         </ul>
@@ -38,7 +38,7 @@ export default function CookiePolicy() {
 
         <h2>Contact us</h2>
         <p>If you have any questions or concerns about our use of cookies, please contact us at [contact information].</p>
-        
+
       </div>
     </main>
   )
