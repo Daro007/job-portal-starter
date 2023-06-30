@@ -22,7 +22,7 @@ export default function About() {
         <ul>
           <li>A user-friendly interface with advanced filtering options to quickly find relevant IT job opportunities</li>
           <li>Clear and detailed job descriptions, emphasizing key responsibilities and required skills, to ensure candidates have a comprehensive understanding of the role</li>
-          <li>Enhanced visibility of company profiles, allowing candidates to gain insights into the organization's culture, values, and mission</li>
+          <li>Enhanced visibility of company profiles, allowing candidates to gain insights into the organization´s culture, values, and mission</li>
           <li>Seamless application tracking and communication tools to keep candidates informed throughout the hiring process</li>
           <li>Access to valuable resources, such as career guides and industry insights, to support professional growth</li>
         </ul>
