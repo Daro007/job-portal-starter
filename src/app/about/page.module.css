@@ -1,0 +1,15 @@
+.main {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    line-height: 30px;
+}
+.about h1 {
+    margin-bottom: 0.5em;
+}
+.about h2 {
+    margin-bottom: 0.5em;
+}
+.about {
+    width: 70%;
+    margin: 3em auto;
+}
