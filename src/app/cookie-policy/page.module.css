@@ -1,0 +1,15 @@
+.main {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    line-height: 30px;
+}
+.cookiePolicy h1 {
+    margin-bottom: 0.5em;
+}
+.cookiePolicy h2 {
+    margin-bottom: 0.5em;
+}
+.cookiePolicy {
+    width: 70%;
+    margin: 3em auto;
+}
