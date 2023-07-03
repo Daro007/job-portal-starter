@@ -40,25 +40,29 @@ async function Footer() {
                 <p className="footerLogo"> <span className={pacifico.className}>Your job on IT </span></p>
                 <p className="copyright">© Copyright 2023</p>
             </Link>
-            <div className="links-footer">
-                {footerData.map(footerLinks =>
-                    <>
-                        <Link className="linkfooter" aria-label={footerLinks.label} href={footerLinks.href}>
-                            {footerLinks.label}
-                        </Link>
-                        <br />
-                    </>
-                )
-                }
-                <a className="linkfooter" aria-label="Linkedin" href="https://www.google.com/" rel="noopener noreferrer">
-                    <FaLinkedin className="footer-icon" />{" "}
-                </a>
-                <a className="linkfooter" aria-label="Twitter" href="https://www.google.com/" rel="noopener noreferrer">
-                    <FaTwitterSquare className="footer-icon" />{" "}
-                </a>
-                <a className="linkfooter" aria-label="Facebook" href="https://www.google.com/" rel="noopener noreferrer">
-                    <FaFacebookSquare className="footer-icon" />
-                </a>
+            <div>
+                <div className="links-footer">
+                    {footerData.map(footerLinks =>
+                        <>
+                            <Link className="linkfooter" aria-label={footerLinks.label} href={footerLinks.href}>
+                                {footerLinks.label}
+                            </Link>
+                            <br />
+                        </>
+                    )
+                    }
+                </div>
+                <div className="social-links">
+                    <a className="linkfooter" aria-label="Linkedin" href="https://www.google.com/" rel="noopener noreferrer">
+                        <FaLinkedin className="footer-icon" />{" "}
+                    </a>
+                    <a className="linkfooter" aria-label="Twitter" href="https://www.google.com/" rel="noopener noreferrer">
+                        <FaTwitterSquare className="footer-icon" />{" "}
+                    </a>
+                    <a className="linkfooter" aria-label="Facebook" href="https://www.google.com/" rel="noopener noreferrer">
+                        <FaFacebookSquare className="footer-icon" />
+                    </a>
+                </div>
             </div>
         </div>
     );

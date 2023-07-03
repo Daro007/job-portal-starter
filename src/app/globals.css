@@ -40,6 +40,11 @@
   --card-border-rgb: 131, 134, 135;
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -121,6 +126,11 @@ a {
   color: #ffffff;
   text-decoration: none;
   margin: 0.5em;
+}
+.social-links{
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .footerLogo {
   color: #ffffff;
