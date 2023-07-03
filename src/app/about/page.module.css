@@ -5,6 +5,8 @@
 }
 .about h1 {
     margin-bottom: 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 .about h2 {
     margin-bottom: 0.5em;

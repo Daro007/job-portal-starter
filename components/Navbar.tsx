@@ -9,10 +9,19 @@ const pacifico = Pacifico({
 })
 
 const collapseItems = [
-    "Home",
-    "Jobs",
-    "About",
-    // "Log Out",
+    {
+        name: "Home",
+        link: "/"
+    },
+    {
+        name: "Jobs",
+        link: "/jobs"
+    },
+    {
+        name: "About",
+        link: "/about"
+    }
+    
 ];
 
 export default function App() {
@@ -33,6 +42,7 @@ export default function App() {
                 background: "#fff",
             }} 
              showIn="xs" />
+            <Link block href="/">
             <Navbar.Brand
                 css={{
                     "@xs": {
@@ -44,9 +54,11 @@ export default function App() {
                     },
                 }}
             >
-                <p className="navbarLogo"> <span className={pacifico.className}>Your job on IT </span></p>
+                
+                    <p className="navbarLogo"> <span className={pacifico.className}>Your job on IT </span></p>
 
             </Navbar.Brand>
+            </Link>
             <Navbar.Content
                 enableCursorHighlight
                 activeColor="default"
@@ -59,9 +71,9 @@ export default function App() {
                     color: "#fff",
                 }}
             >
-                <Navbar.Link block href="#">Jobs</Navbar.Link>
-                <Navbar.Link block href="#">About </Navbar.Link>
-                <Navbar.Link block href="#">Pricing</Navbar.Link>
+                <Navbar.Link block href="/jobs">Jobs</Navbar.Link>
+                <Navbar.Link block href="/about">About </Navbar.Link>
+                <Navbar.Link block href="/contact">Contact</Navbar.Link>
             </Navbar.Content>
             {/* <Navbar.Content
                 css={{
@@ -123,7 +135,7 @@ export default function App() {
             }}>
                 {collapseItems.map((item, index) => (
                     <Navbar.CollapseItem
-                        key={item}
+                        key={item.name}
                         activeColor="secondary"
                         // css={{
                         //     color: index === collapseItems.length - 1 ? "$error" : "",
@@ -135,9 +147,9 @@ export default function App() {
                             css={{
                                 minWidth: "100%",
                             }}
-                            href="#"
+                            href={item.link}
                         >
-                            {item}
+                            {item.name}
                         </Link>
                     </Navbar.CollapseItem>
                 ))}

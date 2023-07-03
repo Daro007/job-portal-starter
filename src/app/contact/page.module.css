@@ -1,0 +1,39 @@
+.main {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    line-height: 30px;
+}
+
+.contactHead h1 {
+    margin-bottom: 0.5em;
+    
+}
+.contactHead p {
+    margin-bottom: 0.5em;
+}
+.contactHead {
+    width: 70%;
+    margin: 3em auto;
+    text-align: center;
+}
+
+.contactFormSection {
+    margin-top: 1em;
+    margin: 2em auto;
+    width: 80%;
+}
+
+
+@media (min-width: 1400px) {
+    .contactFormSection {
+        width: 60%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .contactForm {
+        width: 50%;
+    }
+    
+    
+  }
+  

@@ -161,9 +161,10 @@ a {
   padding-top: 40vh;
   color: #ffffff;
   font-family: "Roboto", cursive;
+  font-size: 2.5em;
 }
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #ffffff;
   text-align: center;
 }
@@ -178,6 +179,9 @@ a {
 @media (min-width: 600px) {
   .title {
     font-size: 6em;
+  }
+  .subtitle {
+    font-size: 1.5em;
   }
   .footerLogo {
     font-size: 3rem;
