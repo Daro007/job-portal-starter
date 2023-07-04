@@ -1,24 +1,14 @@
 import Contact from "./contact"
 
-
-interface Settings {
-  w3ckey: string;
-  email: string;
-  phone: string;
-}
-
-
 export default function ContactPage() {
 
-  const Settings: Settings = {
+  const props = {
     w3ckey: "SOME_KEY",
     email: "contact@sad.com",
     phone: "+34777685885"
   }
   return (
-
-    <Contact props={Settings} />
-
+    <Contact w3ckey={props.w3ckey} email={props.email} phone={props.phone} />
   )
 }
 

@@ -1,18 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { JSXElementConstructor, PromiseLikeOfReactNode, ReactElement, ReactNode, ReactPortal, useState } from "react";
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
 import styles from './page.module.css'
 
 
-interface Settings {
+type ContactSettings = {
     w3ckey: string;
     email: string;
     phone: string;
 }
 
-export default function Contact(props: Settings) {
+export default function Contact( { w3ckey, email, phone }: ContactSettings ) {
 
     const {
         register,
@@ -26,9 +26,9 @@ export default function Contact(props: Settings) {
         mode: "onTouched"
     });
     const [isSuccess, setIsSuccess] = useState(false);
-    const [message, setMessage] = useState(false);
+    const [message, setMessage] = useState("");
     // Please update the Access Key in the Sanity CMS - Site Congig Page
-    const apiKey = props?.w3ckey || "YOUR_ACCESS_KEY_HERE";
+    const apiKey = w3ckey || "YOUR_ACCESS_KEY_HERE";
 
     const { submit: onSubmit } = useWeb3Forms({
         access_key: apiKey,
@@ -36,12 +36,12 @@ export default function Contact(props: Settings) {
             from_name: "Stablo Template",
             subject: "New Contact Message from Stablo Website"
         },
-        onSuccess: (msg, data) => {
+        onSuccess: (msg, _data) => {
             setIsSuccess(true);
             setMessage(msg);
             reset();
         },
-        onError: (msg, data) => {
+        onError: (msg, _data) => {
             setIsSuccess(false);
             setMessage(msg);
         }
@@ -69,16 +69,16 @@ export default function Contact(props: Settings) {
                         form and send us an email.
                     </p>
                     <div>
-                        {props?.email && (
+                        {email && (
                             <div>
-                                <a href={`mailto:${props.email}`}>
-                                    {props.email}
+                                <a href={`mailto:${email}`}>
+                                    {email}
                                 </a>
                             </div>
                         )}
-                        {props?.phone && (
+                        {phone && (
                             <div>
-                                <a href={`tel:${props.phone}`}>{props.phone}</a>
+                                <a href={`tel:${phone}`}>{phone}</a>
                             </div>
                         )}
                     </div>
@@ -108,7 +108,7 @@ export default function Contact(props: Settings) {
                             />
                             {errors.name && (
                                 <div className="mt-1 text-red-600">
-                                    <small>{errors.name.message}</small>
+                                    <small>{errors?.name?.message?.toString()}</small>
                                 </div>
                             )}
                         </div>
@@ -121,7 +121,7 @@ export default function Contact(props: Settings) {
                                 id="email_address"
                                 type="email"
                                 placeholder="Email Address"
-                                name="email"
+                                // name="email"
                                 autoComplete="false"
                                 className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white rounded-md outline-none dark:placeholder:text-gray-200 dark:bg-gray-900   focus:ring-4  ${errors.email
                                     ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
@@ -137,14 +137,14 @@ export default function Contact(props: Settings) {
                             />
                             {errors.email && (
                                 <div className="mt-1 text-red-600">
-                                    <small>{errors.email.message}</small>
+                                    <small>{errors?.email?.message?.toString()}</small>
                                 </div>
                             )}
                         </div>
 
                         <div className="mb-3">
                             <textarea
-                                name="message"
+                                // name="message"
                                 placeholder="Your Message"
                                 className={`w-full px-4 py-3 border-2 placeholder:text-gray-800 dark:text-white dark:placeholder:text-gray-200 dark:bg-gray-900   rounded-md outline-none  h-36 focus:ring-4  ${errors.message
                                     ? "border-red-600 focus:border-red-600 ring-red-100 dark:ring-0"
@@ -157,7 +157,7 @@ export default function Contact(props: Settings) {
                             {errors.message && (
                                 <div className="mt-1 text-red-600">
                                     {" "}
-                                    <small>{errors.message.message}</small>
+                                    <small>{errors?.message?.message?.toString()}</small>
                                 </div>
                             )}
                         </div>
