@@ -1,0 +1,11 @@
+.main {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    line-height: 30px;
+}
+
+.jobsContainer {
+    width: 90%;
+    margin: 0 auto;
+    
+}
