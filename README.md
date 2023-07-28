@@ -41,8 +41,13 @@ To run the project locally, follow these steps:
 ```
 4. Start the development server:
 ```bash
-    npm run dev
+    npm run serve-json
 ```
+
+5. Start the development server:
+```bash
+    npm run dev
+``` 
 
 The homepage should now be accessible at [http://localhost:3000](http://localhost:3000)
 Open  with your browser to see the result.
@@ -53,7 +58,7 @@ Contributions to the Job Portal homepage are welcome. If you find any issues or 
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code as per your needs.
+This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code as per your needs;
 
 ## Contact
 
