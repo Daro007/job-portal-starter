@@ -10,6 +10,7 @@ export default function Home() {
     <main className={styles.main}>
       <Hero />
       <h2 className={styles.mainTitle}> Why us ? </h2>
+      {/* TODO: refactor to its own component: Reasons */}
       <div className={styles.reasons}>
         <div className={styles.item}>
           <div>
